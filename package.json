@@ -1,0 +1,29 @@
+{
+  "name": "vogel.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "watch:sass": "node-sass src/sass/main.scss build/index.css -w",
+    "devserver": "webpack-dev-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Nelu Platonov platon.nelu@yahoo.com",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^5.0.1",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
